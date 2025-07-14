@@ -44,7 +44,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * TODO : serialize & deserialize by existing config (toString() & fromString() ) ------------------------------------------
  * TODO : impl - base method appendCellValueTo(StringBuilder sb)
  * TODO : getTableData & receive data for declare column value (excel formula? )
- * TODO : ColumnOptions (ColOpt) || Modifier -> Kotlin Compose Modifier (global factory) + cellColor(color) & cellColor(color, predicate<CellValue>) & cellColor(color, BiPredicate<Row, CellValue>)
+ * TODO : ColumnOptions (ColOpt) || Modifier -> Kotlin Compose Modifier (global factory)
+ *          + cellColor(color)
+ *          & cellColor(color, predicate<CellValue>)
+ *          & cellColor(color, BiPredicate<Row, CellValue>)
  * TODO : ??? replace ArrayList content -> Iterator content
  * TODO : ??? rename getValue -> cellValueGetter
  * TODO : ??? rename generic names
@@ -54,6 +57,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * TODO : split interface with doc from impl
  * TODO : спека на размер колонок
  * TODO : todos
+ *
+ * 6.0
+ * TODO : auto generated columns by getters (reflection) for Class<?> PrintTable.ofClassAutoGenerateColumns()
  */
 public class PrintTableTest {
     private static final String LS = System.lineSeparator();
